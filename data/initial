@@ -1,0 +1,9 @@
+Script -> initial
+Activation Sequence -> F D
+Active -> true
+Action -> Enter; Times -> 1; Delay -> 0
+Action -> G; Times -> Infinite; Delay -> 50
+Action -> G; Times -> Infinite; Delay -> 50
+Action -> Space; Times -> Infinite; Delay -> 20
+Action -> E; Times -> Infinite; Delay -> 50
+Action -> Z; Times -> Infinite; Delay -> 50

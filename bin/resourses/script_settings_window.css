@@ -1,0 +1,60 @@
+#scripts_settings_ancor_selection,
+#script_settings_scroll .viewport,
+#scripts_settings_vbox {
+    background-color: #080404;
+    -fx-background-color: #080404;
+}
+
+#script_settings_scroll {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    padding: 0;
+}
+
+#script_settings_scroll:focused {
+    -fx-background-insets: 0;
+}
+
+#script_settings_scroll .corner {
+    -fx-background-insets: 0;
+}
+
+#script_name_text,
+#key_activation_sequence_text {
+    -fx-fill: whitesmoke;
+    fill: whitesmoke;
+}
+
+
+#save_script_button,
+#add_script_action_button {
+    -fx-text-fill: whitesmoke;
+    -fx-background-color: transparent;
+    background-color: transparent;
+    -fx-border-width: 0 1px 0 1px;
+    border-width: 0 1px 0 1px;
+    -fx-border-color: whitesmoke;
+    border-color: whitesmoke;
+    -fx-border-style: solid;
+    border-style: solid;
+}
+
+#save_script_button:hover,
+#add_script_action_button:hover {
+    -fx-background-color: #383434;
+    background-color: #383434;
+}
+
+
+#user_input_name,
+#key_activation_sequence_user_input {
+    -fx-text-fill: whitesmoke;
+    -fx-background-color: transparent;
+    background-color: transparent;
+    -fx-border-width: 0 0 1px 0;
+    border-width: 0 1px 1px 1px;
+    -fx-border-color: whitesmoke;
+    border-color: whitesmoke;
+    -fx-border-style: solid;
+    border-style: solid;
+}

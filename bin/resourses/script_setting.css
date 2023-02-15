@@ -1,0 +1,107 @@
+#times_repeated_infinitely {
+    -fx-background-color: transparent;
+    background-color: transparent;
+    -fx-text-fill: whitesmoke;
+}
+
+#times_repeated_infinitely .box {
+    -fx-background-color: transparent;
+    background-color: transparent;
+    -fx-border-color: whitesmoke;
+    border-color: whitesmoke;
+    -fx-border-radius: 1px;
+    border-radius: 1px;
+}
+
+#times_repeated_infinitely:selected .box {
+    -fx-background-color: transparent;
+    background-color: transparent;
+    -fx-border-color: transparent;
+    border-color: transparent;
+    -fx-border-radius: 1px;
+    border-radius: 1px;
+}
+
+#times_repeated_infinitely:selected .mark {
+    -fx-background-color: whitesmoke;
+    background-color: whitesmoke;
+}
+
+#script_setting_key_text,
+#script_times_repeated_text,
+#script_activation_delay_text {
+    -fx-fill: whitesmoke;
+    fill: whitesmoke;
+}
+
+#remove_setting_button {
+    -fx-text-fill: whitesmoke;
+    -fx-background-color: transparent;
+    background-color: transparent;
+    -fx-border-width: 0 1px 0 1px;
+    border-width: 0 1px 0 1px;
+    -fx-border-color: whitesmoke;
+    border-color: whitesmoke;
+    -fx-border-style: solid;
+    border-style: solid;
+}
+
+#remove_setting_button:hover {
+    -fx-border-width: 1px 1px 1px 1px;
+    border-width: 1px 1px 1px 1px;
+}
+
+#script_setting_activation_key,
+#script_times_repeated_user_input,
+#script_activation_delay_field {
+    -fx-text-fill: whitesmoke;
+    -fx-background-color: transparent;
+    background-color: transparent;
+    -fx-border-width: 0 0 1px 0;
+    border-width: 0 1px 1px 1px;
+    -fx-border-color: whitesmoke;
+    border-color: whitesmoke;
+    -fx-border-style: solid;
+    border-style: solid;
+}
+
+#menue_times_repeat .arrow-button .arrow {
+    -fx-background-color: whitesmoke;
+    background-color: whitesmoke;
+}
+
+#menue_times_repeat {
+    -fx-text-fill: whitesmoke;
+    -fx-background-color: transparent;
+    background-color: transparent;
+    -fx-border-width: 0 1px 0 1px;
+    border-width: 0 1px 0 1px;
+    -fx-border-color: whitesmoke;
+    border-color: whitesmoke;
+    -fx-border-style: solid;
+    border-style: solid;
+}
+
+.context-menu * {
+    -fx-background-color: #080404;
+}
+
+.menu-item {
+    -fx-text-fill: whitesmoke;
+    -fx-background-color: #080404;
+    background-color: #080404;
+}
+
+.menu-item:focused {
+    -fx-border-width: 0 1px 0 1px;
+    border-width: 0 1px 0 1px;
+    -fx-border-color: whitesmoke;
+    border-color: whitesmoke;
+    -fx-border-style: solid;
+    border-style: solid;
+}
+
+.context-menu .menu-item .label {
+    -fx-text-fill: whitesmoke;
+    -fx-background-color: transparent;
+}

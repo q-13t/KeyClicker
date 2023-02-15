@@ -1,0 +1,56 @@
+#script_name,
+#script_activation_sequence {
+    -fx-fill: whitesmoke;
+    fill: whitesmoke;
+}
+
+#script_active {
+    -fx-background-color: transparent;
+    background-color: transparent;
+    -fx-text-fill: whitesmoke;
+}
+
+#script_active .box {
+    -fx-background-color: transparent;
+    background-color: transparent;
+    -fx-border-color: whitesmoke;
+    border-color: whitesmoke;
+    -fx-border-radius: 1px;
+    border-radius: 1px;
+}
+
+#script_active:selected .box {
+    -fx-background-color: transparent;
+    background-color: transparent;
+    -fx-border-color: transparent;
+    border-color: transparent;
+    -fx-border-radius: 1px;
+    border-radius: 1px;
+}
+
+#script_active:selected .mark {
+    -fx-background-color: whitesmoke;
+    background-color: whitesmoke;
+}
+
+#DELETE_delete_button,
+#YES_delete_button,
+#NO_delete_button {
+    -fx-text-fill: whitesmoke;
+    -fx-background-color: transparent;
+    background-color: transparent;
+    -fx-border-width: 0 1px 0 1px;
+    border-width: 0 1px 0 1px;
+    -fx-border-color: whitesmoke;
+    border-color: whitesmoke;
+    -fx-border-style: solid;
+    border-style: solid;
+
+}
+
+#DELETE_delete_button:hover,
+#YES_delete_button:hover,
+#NO_delete_button:hover {
+    -fx-background-color: #383434;
+    background-color: #383434;
+}

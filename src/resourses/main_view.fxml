@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="base_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" stylesheets="/resourses/main_view.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.ViewController">
+   <children>
+      <TabPane fx:id="tab_pane" prefHeight="750.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="scripts_tab" text="Key">
+               <content>
+                  <AnchorPane fx:id="scripts_pane" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="scripts_text" layoutX="33.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key Scripts" textAlignment="CENTER">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Text>
+                        <ScrollPane fx:id="scripts_scroll_selection" hbarPolicy="NEVER" layoutX="14.0" layoutY="47.0" pannable="true" prefHeight="660.0" prefWidth="210.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane fx:id="scripts_scroll_ancor_selection" prefHeight="658.0" prefWidth="208.0">
+                                 <children>
+                                    <VBox fx:id="scripts_vbox_selection" maxHeight="658.0" maxWidth="208.0" prefHeight="658.0" prefWidth="208.0">
+                                       <children>
+                                          <Button fx:id="add_script_button" mnemonicParsing="false" onAction="#displayNewScriptWindow" prefHeight="25.0" prefWidth="210.0" text="Add Script" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <Pane fx:id="script_settings_selection" layoutX="230.0" layoutY="47.0" prefHeight="660.0" prefWidth="750.0" />
+                        <CheckBox fx:id="global_active_switch" layoutX="176.0" layoutY="14.0" mnemonicParsing="false" onAction="#setGlobalListener" text="Globaly Active" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+            <Tab fx:id="mouse_tab" text="Mouse">
+              <content>
+                <AnchorPane fx:id="mouse_anchor_pane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox fx:id="mouse_global_active_switch" layoutX="201.0" layoutY="13.0" mnemonicParsing="false" onAction="#setGlobalMouseListener" text="Globaly Active" />
+                        <Text fx:id="mouse_scripts_text" layoutX="32.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mouse Scripts" textAlignment="CENTER">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="implemented_text" layoutX="35.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Not so much implemented)" />
+                        <Button fx:id="mouse_save_button" layoutX="313.0" layoutY="9.0" mnemonicParsing="false" onAction="#saveMouseData" text="Save" />
+                        <VBox fx:id="mouse_vbox" layoutX="31.0" layoutY="52.0" prefHeight="374.0" prefWidth="387.0" spacing="40.0">
+                           <children>
+                              <Pane fx:id="mouse_RMB_pane" onMouseEntered="#highlight" onMouseExited="#unhighlight" prefHeight="100.0" prefWidth="385.0">
+                                 <children>
+                                    <CheckBox fx:id="mouse_RMB_active_check" layoutX="77.0" layoutY="22.0" mnemonicParsing="false" text="Active" />
+                                    <Text fx:id="mouse_RMB_text" layoutX="14.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RMB" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="mouse_RMB_KeySequence_text" layoutX="14.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key Sequence" />
+                                    <TextField fx:id="mouse_RMB_KeySequence" editable="false" layoutX="104.0" layoutY="57.0" onMouseClicked="#askKeySequense" prefHeight="25.0" prefWidth="115.0" />
+                                    <CheckBox fx:id="mouse_RMB_activeOnHold_check" layoutX="231.0" layoutY="61.0" mnemonicParsing="false"  text="Active On Hold" />
+                                 </children>
+                              </Pane>
+                              <Pane fx:id="mouse_LMB_pane" onMouseEntered="#highlight" onMouseExited="#unhighlight" prefHeight="100.0" prefWidth="385.0">
+                                 <children>
+                                    <CheckBox fx:id="mouse_LMB_active_check" layoutX="77.0" layoutY="22.0" mnemonicParsing="false" text="Active" />
+                                    <Text fx:id="mouse_LMB_text" layoutX="14.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LMB" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="mouse_LMB_KeySequence_text" layoutX="14.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key Sequence" />
+                                    <TextField fx:id="mouse_LMB_KeySequence" editable="false" layoutX="104.0" layoutY="57.0" onMouseClicked="#askKeySequense" prefHeight="25.0" prefWidth="115.0" />
+                                    <CheckBox fx:id="mouse_LMB_activeOnHold_check" layoutX="231.0" layoutY="61.0" mnemonicParsing="false"  text="Active On Hold" />
+                                 </children>
+                              </Pane>
+                              <Pane fx:id="mouse_MMB_pane" onMouseEntered="#highlight" onMouseExited="#unhighlight" prefHeight="100.0" prefWidth="385.0">
+                                 <children>
+                                    <CheckBox fx:id="mouse_MMB_active_check" layoutX="77.0" layoutY="22.0" mnemonicParsing="false" text="Active" />
+                                    <Text fx:id="mouse_MMB_text" layoutX="14.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MMB" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="mouse_MMB_KeySequence_text" layoutX="14.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key Sequence" />
+                                    <TextField fx:id="mouse_MMB_KeySequence" editable="false" layoutX="104.0" layoutY="57.0" onMouseClicked="#askKeySequense" prefHeight="25.0" prefWidth="115.0" />
+                                    <CheckBox fx:id="mouse_MMB_activeOnHold_check" layoutX="231.0" layoutY="61.0" mnemonicParsing="false"  text="Active On Hold" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>
