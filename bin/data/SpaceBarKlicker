@@ -1,4 +1,0 @@
-Script -> SpaceBarKlicker
-Activation Sequence -> T F S
-Active -> false
-Action -> Space; Times -> Infinite; Delay -> 1000

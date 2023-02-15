@@ -1,7 +1,0 @@
-Script -> test
-Activation Sequence -> K O 
-Active -> true
-Action -> Enter; Times -> 1; Delay -> 0
-Action -> F; Times -> Infinite; Delay -> 700
-Action -> D; Times -> Infinite; Delay -> 1000
-Action -> 5; Times -> Infinite; Delay -> 500
